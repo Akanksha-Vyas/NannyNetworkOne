@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nanny Network</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Chelsea+Market|Lobster+Two:700|Love+Ya+Like+A+Sister|Merienda+One" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  
+  <!-- CSS STYLE SHEET -->
+  <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+  <!-- ICON -->
+  <link rel="shortcut icon" type="img/png" href="assets/images/baby.png">
+</head>
+<body> 
+
+  <!-- <div class="index"> -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light col-md-12 header">
+    <img src="assets/images/baby.png" alt="Baby" height="60px" width="100px">
+    
+    Nanny Network
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <!-- <li class="nav-item active nav-buttons">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li> -->
+        <li class="nav-item nav-buttons">
+          <a class="nav-link" href="/about">About Us</a>
+        </li>
+        <!-- <li class="nav-item nav-buttons">
+          <a class="nav-link" href="/dashboard">Dashboard</a>
+        </li> -->
+        <li class="nav-item nav-buttons">
+          <a class="nav-link" href="/signin">Log In</a>
+        </li>
+        <li class="nav-item nav-buttons">
+          <a class="nav-link" href="/signup">Sign Up</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!-- ========================================================= -->
+  <div class="name-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+            <div id="section-name">Nanny Network</div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- ========================================================= -->
+  <div class="main">
+    <div class="container">
+      <div class="main-text">~connecting parents with quality childcare~</div>       
+    </div>
+  </div>
+<!-- </div> index -->
+
+<script>
+
+$(document).ready(function()    {
+  $("#section-name").animate({opacity: "1"}, 1000);
+  $(".header").animate({opacity: "0.75"}, 3000);
+  $(".main-text").animate({opacity: "1"}, 4000);
+});  
+
+</script>
+
+</body>
+</html>
