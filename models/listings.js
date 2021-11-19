@@ -20,10 +20,10 @@ module.exports = function(sequelize, DataTypes) {
         type: DataTypes.STRING,
         allowNull: false
       },
-      // needs: {
-      //   type: DataTypes.TEXT,
-      //   allowNull: false
-      // },
+      phoneNumber: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
       description: {
         type: DataTypes.TEXT,
         allowNull: false

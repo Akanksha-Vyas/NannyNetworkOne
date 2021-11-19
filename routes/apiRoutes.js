@@ -22,7 +22,8 @@ module.exports = function(app) {
         payRate: req.body.payRate,
         totalKids: req.body.totalKids,
         needs: req.body.needs,
-        description: req.body.description
+        description: req.body.description,
+        phoneNumber: req.body.phoneNumber
       })
         .then(function(dbListing){
           res.json(dbListing);

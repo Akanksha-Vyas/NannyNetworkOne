@@ -10,5 +10,6 @@ CREATE TABLE listings
 	listing_rate VARCHAR(255) NOT NULL,
 	listing_location VARCHAR(255) NOT NULL,
 	listing_date VARCHAR(255) NOT NULL,
+	listing_phone_number VARCHAR(20) NOT NULL,
   	PRIMARY KEY(id)
 );

@@ -49,7 +49,7 @@
                         <div class="form-row">
                             <div class="col-md-12">
                                 <label>Where do you need care?</label>
-                                <input type="text" class="form-control" id="location" placeholder="Philadelphia, PA" required>
+                                <input type="text" class="form-control" id="location" placeholder="Dewas, MP" required>
                             </div>
                         </div>
                         <!-- ================================== -->
@@ -72,7 +72,7 @@
                         <div class="form-row">
                             <div class="col-md-12">
                                 <label>What would you like to pay per hour?</label>
-                                <input type="text" class="form-control" id="pay-rate" placeholder="$20 an hour" required>
+                                <input type="text" class="form-control" id="pay-rate" placeholder="Rs.20 an hour" required>
                             </div>
                         </div>
                         <!-- ================================== -->
@@ -80,7 +80,15 @@
                         <div class="form-row">
                             <div class="col-md-12">
                                 <label>Who needs care?</label><br>
-                                <input type="text" class="form-control" id="total-kids" placeholder="Two toddlers" required>
+                                <input type="text" class="form-control" id="total-kids" placeholder="Two Toddlers" required>
+                            </div>
+                        </div>
+
+                        <!-- Contact Number -->
+                        <div class="form-row">
+                            <div class="col-md-12">
+                                <label>Contact Number</label><br>
+                                <input type="tel" class="form-control" id="phone-number" maxlength="10" placeholder="xxxxxxxxxx" required>
                             </div>
                         </div>
 
@@ -139,7 +147,7 @@
     $("#submit").on("click", function(event) {
       event.preventDefault();
       if ($.trim($("#location").val()) === "" || $.trim($("#duration").val()) === "" || $.trim($("#date-time").val()) === "" || $.trim($("#pay-rate").val()) === "" ||
-        $.trim($("#total-kids").val()) === ""
+        $.trim($("#total-kids").val()) === "" || $.trim($("#phone-number").val()) === ""
         ) {
         alert('you did not fill out one of the fields');
         return false;
@@ -151,7 +159,8 @@
         dateTime: $("#date-time").val().trim(),
         payRate: $("#pay-rate").val().trim(),
         totalKids: $("#total-kids").val().trim(),
-        description: $("#description").val().trim()
+        description: $("#description").val().trim(),
+        phoneNumber:$("#phone-number").val().trim()
       };
 
       $.post("/api/listings", newJob, function() {
